@@ -13,7 +13,12 @@ export function Hero() {
         alt={personal.name}
         width={128}
         height={128}
-        className="rounded-full border border-border"
+        // Typically the LCP element (ST-077) — hint the browser to fetch it
+        // immediately rather than at its default (often deprioritized)
+        // priority, same intent as `loading="lazy"` for offscreen images
+        // but in the opposite direction: this one should load first.
+        fetchPriority="high"
+        className="aspect-square rounded-full border border-border object-cover"
       />
       <div className="flex flex-col gap-2">
         <h1 className="font-heading text-4xl font-bold text-foreground sm:text-6xl">

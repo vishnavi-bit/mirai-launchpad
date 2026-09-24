@@ -1,6 +1,7 @@
 import { Link, useParams } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import { PageTransition } from '@/components/motion/PageTransition'
+import { SEO } from '@/components/SEO'
 import { getBlogPostBySlug } from '@/lib/content/blog'
 
 /**
@@ -14,6 +15,7 @@ export function BlogPostPage() {
   if (!post) {
     return (
       <PageTransition>
+        <SEO title="Post not found" noindex />
         <div className="mx-auto flex max-w-3xl flex-col items-center gap-4 px-4 py-16 text-center">
           <h1 className="font-heading text-2xl font-semibold text-foreground">Post not found</h1>
           <Link to="/blog" className="text-primary hover:underline">
@@ -26,6 +28,7 @@ export function BlogPostPage() {
 
   return (
     <PageTransition>
+      <SEO title={post.title} description={post.excerpt} path={`/blog/${post.slug}`} />
       <div className="mx-auto flex max-w-3xl flex-col gap-6 px-4 py-16">
         <Link to="/blog" className="text-sm text-muted-foreground hover:text-foreground">
           &larr; Back to blog

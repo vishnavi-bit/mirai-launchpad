@@ -1,4 +1,5 @@
 import { PageTransition } from '@/components/motion/PageTransition'
+import { SEO } from '@/components/SEO'
 import { Hobbies } from '@/components/sections/Hobbies'
 import { Gallery } from '@/components/sections/Gallery'
 
@@ -9,6 +10,7 @@ import { Gallery } from '@/components/sections/Gallery'
 export function OthersPage() {
   return (
     <PageTransition>
+      <SEO title="Others" description="Hobbies and a photo gallery." path="/others" />
       <div className="flex flex-col">
         <h1 className="sr-only">Others</h1>
         <Hobbies />

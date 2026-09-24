@@ -16,6 +16,7 @@ import {
 } from '@/components/ui/navigation-menu'
 import { ThemeSwitcher } from '@/components/ThemeSwitcher'
 import { PageTransition } from '@/components/motion/PageTransition'
+import { SEO } from '@/components/SEO'
 
 const swatches: { label: string; bg: string; fg: string }[] = [
   { label: 'background / foreground', bg: 'bg-background', fg: 'text-foreground' },
@@ -39,6 +40,7 @@ const swatches: { label: string; bg: string; fg: string }[] = [
 export function ThemePreviewPage() {
   return (
     <PageTransition>
+      <SEO title="Theme Preview" noindex />
       <div className="mx-auto flex max-w-3xl flex-col gap-8 px-4 py-10">
         <div className="flex items-center justify-between">
           <h1 className="font-heading text-3xl font-bold text-foreground">Theme Preview</h1>

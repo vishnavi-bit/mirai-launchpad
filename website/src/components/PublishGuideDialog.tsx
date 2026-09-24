@@ -61,6 +61,14 @@ export function PublishGuideDialog() {
             <Code>https://&lt;your-username&gt;.github.io/&lt;your-repo-name&gt;/</Code> — also
             shown on the Actions run itself and under Settings → Pages.
           </Step>
+
+          <Step n={6} title="Custom domain (optional)">
+            Add a <Code>CNAME</Code> file under <Code>public/</Code> containing just your domain,
+            point its DNS at GitHub Pages, then set it under{' '}
+            <strong>Settings → Pages → Custom domain</strong>. GitHub writes the file&rsquo;s
+            content for you the first time you enter a domain there, so this is usually a
+            Settings-page action, not a manual file edit.
+          </Step>
         </ol>
       </DialogContent>
     </Dialog>

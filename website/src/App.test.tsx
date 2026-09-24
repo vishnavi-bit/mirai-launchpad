@@ -24,9 +24,11 @@ describe('App', () => {
     expect(screen.getByRole('contentinfo')).toBeInTheDocument()
   })
 
-  it('matches routes nested under the configured basePath (ST-061)', () => {
+  it('matches routes nested under the configured basePath (ST-061)', async () => {
     window.history.pushState({}, '', `${siteConfig.basePath}resume`)
     render(<App />)
-    expect(screen.getByRole('heading', { name: personal.name, level: 1 })).toBeInTheDocument()
+    // ResumePage is lazy-loaded (ST-077) — its heading only appears once
+    // the chunk resolves, so this needs findBy, not getBy.
+    expect(await screen.findByRole('heading', { name: personal.name, level: 1 })).toBeInTheDocument()
   })
 })

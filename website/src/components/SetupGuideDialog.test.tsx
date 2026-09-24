@@ -33,5 +33,9 @@ describe('SetupGuideDialog (ST-083)', () => {
       'href',
       'https://formspree.io',
     )
+    expect(screen.getByRole('link', { name: 'analytics.google.com' })).toHaveAttribute(
+      'href',
+      'https://analytics.google.com',
+    )
   })
 })

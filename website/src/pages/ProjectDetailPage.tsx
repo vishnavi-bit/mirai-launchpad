@@ -1,6 +1,7 @@
 import { Link, useParams } from 'react-router-dom'
 import { Button } from '@/components/ui/button'
 import { PageTransition } from '@/components/motion/PageTransition'
+import { SEO } from '@/components/SEO'
 import { getProjectById } from '@/lib/content/projects'
 import { withBase } from '@/lib/base-path'
 
@@ -12,6 +13,7 @@ export function ProjectDetailPage() {
   if (!project) {
     return (
       <PageTransition>
+        <SEO title="Project not found" noindex />
         <div className="mx-auto flex max-w-3xl flex-col items-center gap-4 px-4 py-16 text-center">
           <h1 className="font-heading text-2xl font-semibold text-foreground">Project not found</h1>
           <Link to="/projects" className="text-primary hover:underline">
@@ -24,6 +26,12 @@ export function ProjectDetailPage() {
 
   return (
     <PageTransition>
+      <SEO
+        title={project.title}
+        description={project.description}
+        image={project.imageUrl}
+        path={`/projects/${project.id}`}
+      />
       <div className="mx-auto flex max-w-3xl flex-col gap-6 px-4 py-16">
         <Link to="/projects" className="text-sm text-muted-foreground hover:text-foreground">
           &larr; Back to projects

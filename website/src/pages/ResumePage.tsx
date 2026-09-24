@@ -2,6 +2,7 @@ import { Mail, MapPin, Phone } from 'lucide-react'
 import ReactMarkdown from 'react-markdown'
 import { Button } from '@/components/ui/button'
 import { PageTransition } from '@/components/motion/PageTransition'
+import { SEO } from '@/components/SEO'
 import { personal } from '@/lib/content/personal'
 import { withBase } from '@/lib/base-path'
 import { experience } from '@/lib/content/experience'
@@ -20,6 +21,11 @@ function formatRange(startDate: string | undefined, endDate: string) {
 export function ResumePage() {
   return (
     <PageTransition>
+      <SEO
+        title="Resume"
+        description={`${personal.name}'s experience, education, and skills.`}
+        path="/resume"
+      />
       <div className="mx-auto flex max-w-3xl flex-col gap-12 px-4 py-16">
         <header className="flex flex-col gap-3">
           <h1 className="font-heading text-3xl font-bold text-foreground">{personal.name}</h1>

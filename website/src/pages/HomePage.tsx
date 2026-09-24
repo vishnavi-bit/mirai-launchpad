@@ -1,4 +1,5 @@
 import { PageTransition } from '@/components/motion/PageTransition'
+import { SEO } from '@/components/SEO'
 import { Hero } from '@/components/sections/Hero'
 import { About } from '@/components/sections/About'
 import { Skills } from '@/components/sections/Skills'
@@ -15,6 +16,7 @@ import { Contact } from '@/components/sections/Contact'
 export function HomePage() {
   return (
     <PageTransition>
+      <SEO path="/" />
       <Hero />
       <About />
       <Skills />

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { PageTransition } from '@/components/motion/PageTransition'
+import { SEO } from '@/components/SEO'
 import { SetupGuideDialog } from '@/components/SetupGuideDialog'
 import { PublishGuideDialog } from '@/components/PublishGuideDialog'
 import { cn } from '@/lib/utils'
@@ -50,6 +51,7 @@ export function CustomizePage() {
 
   return (
     <PageTransition>
+      <SEO title="Developer Tools" noindex />
       <div className="mx-auto flex max-w-3xl flex-col gap-8 px-4 py-16">
         <div className="flex flex-col gap-2">
           <h1 className="font-heading text-3xl font-bold text-foreground">Developer Tools</h1>

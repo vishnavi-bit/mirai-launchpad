@@ -10,6 +10,7 @@ import { spaFallback404 } from './vite-plugin-spa-fallback.ts'
 import { contentEditor } from './vite-plugin-content-editor.ts'
 import { blogEditor } from './vite-plugin-blog-editor.ts'
 import { devRoutes } from './vite-plugin-dev-routes.ts'
+import { seoFiles } from './vite-plugin-seo-files.ts'
 
 /**
  * Computes the deployed base path from GitHub Actions' automatic
@@ -33,16 +34,35 @@ function resolveBasePath(): string {
   return basePath
 }
 
+/**
+ * Computes the canonical absolute site URL (for og:image, sitemap.xml,
+ * robots.txt) the same way `resolveBasePath` computes the path: derived
+ * from `GITHUB_REPOSITORY` when present (the actual deployed
+ * `<owner>.github.io[/repo/]` URL), falling back to a `localhost` URL under
+ * the same base path otherwise so local preview builds still get valid,
+ * self-consistent absolute URLs.
+ */
+function resolveSiteUrl(basePath: string): string {
+  const repository = process.env.GITHUB_REPOSITORY
+  if (repository) {
+    const [owner] = repository.split('/')
+    return `https://${owner.toLowerCase()}.github.io${basePath}`
+  }
+  return `http://localhost:5173${basePath}`
+}
+
 // Single source of truth for the deployed base path (ST-061, ST-062): the
 // router's `basename`, Vite's `base`, and index.html's favicon href all
 // derive from this one value.
 const basePath = resolveBasePath()
+const siteUrl = resolveSiteUrl(basePath)
 
 // https://vite.dev/config/
 export default defineConfig({
   base: basePath,
   define: {
     __BASE_PATH__: JSON.stringify(basePath),
+    __SITE_URL__: JSON.stringify(siteUrl),
   },
   plugins: [
     react(),
@@ -53,6 +73,7 @@ export default defineConfig({
     contentEditor(),
     blogEditor(),
     devRoutes(),
+    seoFiles(siteUrl),
   ],
   resolve: {
     alias: {

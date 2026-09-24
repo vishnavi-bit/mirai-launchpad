@@ -1,11 +1,13 @@
 import { Link } from 'react-router-dom'
 import { PageTransition } from '@/components/motion/PageTransition'
+import { SEO } from '@/components/SEO'
 import { blogPosts } from '@/lib/content/blog'
 
 /** Blog list page (ST-054) — every post, newest first. */
 export function BlogPage() {
   return (
     <PageTransition>
+      <SEO title="Blog" description="Articles and writing." path="/blog" />
       <div className="mx-auto flex max-w-3xl flex-col gap-8 px-4 py-16">
         <h1 className="font-heading text-3xl font-bold text-foreground">Blog</h1>
         <div className="flex flex-col gap-8">

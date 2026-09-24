@@ -16,12 +16,15 @@ beforeEach(() => {
 })
 
 describe('showCustomizeGuide: false (ST-096)', () => {
-  it('hides the Customize nav link but leaves the route reachable directly', () => {
+  it('hides the Customize nav link but leaves the route reachable directly', async () => {
     render(<App />)
     expect(screen.queryByRole('link', { name: 'Customize' })).not.toBeInTheDocument()
 
     window.history.pushState({}, '', `${siteConfig.basePath}customize`)
     render(<App />)
-    expect(screen.getByRole('heading', { name: 'Developer Tools', level: 1 })).toBeInTheDocument()
+    // CustomizePage is lazy-loaded (ST-077) — findBy waits for the chunk.
+    expect(
+      await screen.findByRole('heading', { name: 'Developer Tools', level: 1 }),
+    ).toBeInTheDocument()
   })
 })
