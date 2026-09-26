@@ -1,24 +1,54 @@
 {
-  "siteTitle": "Roopesh Tayaloor",
-  "tagline": "AI Engineer building products, tools, and the people who ship them.",
-  "basePath": "/mirai-launchpad/",
+  "siteTitle": "SIDDAVATAM VISHNAVI",
+  "tagline": "Full Stack Developer | AI Engineer",
+  "basePath": "/profile/",
   "defaultTheme": "dark-tech",
-  "availableThemes": ["modern-minimal", "dark-tech", "vibrant-creative", "blue-professional"],
+  "availableThemes": [
+    "modern-minimal",
+    "dark-tech",
+    "vibrant-creative",
+    "blue-professional"
+  ],
   "favicon": "/favicon.svg",
   "seo": {
-    "description": "Portfolio of Roopesh Tayaloor, AI Engineer — projects, experience, and writing.",
+    "description": "Portfolio of SIDDAVATAM VISHNAVI, Full Stack Developer and AI Engineer — projects, experience, skills, and certifications.",
     "ogImage": "/images/og-image.svg"
   },
   "navigation": [
-    { "id": "home", "label": "Home", "enabled": true, "order": 1 },
-    { "id": "resume", "label": "Resume", "enabled": true, "order": 2 },
-    { "id": "projects", "label": "Projects", "enabled": true, "order": 3 },
-    { "id": "others", "label": "Others", "enabled": true, "order": 4 },
-    { "id": "blog", "label": "Blog", "enabled": true, "order": 5 }
+    {
+      "id": "home",
+      "label": "Home",
+      "enabled": true,
+      "order": 1
+    },
+    {
+      "id": "resume",
+      "label": "Resume",
+      "enabled": true,
+      "order": 2
+    },
+    {
+      "id": "projects",
+      "label": "Projects",
+      "enabled": true,
+      "order": 3
+    },
+    {
+      "id": "others",
+      "label": "Others",
+      "enabled": true,
+      "order": 4
+    },
+    {
+      "id": "blog",
+      "label": "Blog",
+      "enabled": true,
+      "order": 5
+    }
   ],
   "contactForm": {
     "provider": "formspree",
-    "endpoint": "https://formspree.io/f/xljeydej"
+    "endpoint": "https://formspree.io/f/your-form-id"
   },
   "showCustomizeGuide": true
 }

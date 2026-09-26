@@ -1,30 +1,32 @@
 [
   {
-    "id": "sample-project-1",
-    "title": "TV Guide",
-    "description": "Replace with a real project description. A short paragraph explaining the problem, your approach, and the outcome works well here.",
-    "tech": ["React", "TypeScript", "Node.js"],
-    "repoUrl": "https://github.com/your-username/sample-project-one",
-    "liveUrl": "https://example.com",
-    "imageUrl": "/images/projects/project-1.svg",
+    "id": "ai-wellness-coach",
+    "title": "AI Wellness Coach",
+    "description": "A full-stack AI wellness application that recommends yogasanas based on user wellness goals such as stress relief, flexibility, strength, and meditation. The application includes goal selection, personalized routine generation, yogasana details, practice sessions, a timer, progress tracking, and completion summaries. Built an API-driven architecture using React.js for the frontend, FastAPI and Python for the backend, and MySQL for data management. Integrated a local Qwen-based LLM to generate personalized routines while validating recommended pose IDs through the backend before displaying them to the user.",
+    "tech": [
+      "React.js",
+      "FastAPI",
+      "Python",
+      "MySQL",
+      "REST APIs",
+      "Qwen LLM"
+    ],
+    "imageUrl": "/images/projects/ai-wellness-coach.png",
     "featured": true
   },
-  {
-    "id": "sample-project-2",
-    "title": "Sample Project Two",
-    "description": "Replace with a real project description. Mention tech stack, your role, and any measurable impact.",
-    "tech": ["Python", "Machine Learning"],
-    "repoUrl": "https://github.com/your-username/sample-project-two",
-    "imageUrl": "/images/projects/project-2.svg",
-    "featured": false
-  },
-  {
-    "id": "sample-project-3",
-    "title": "Sample Project Three",
-    "description": "Replace with a real project description. This one has no live demo — the `liveUrl` field is simply omitted.",
-    "tech": ["Next.js", "Tailwind CSS"],
-    "repoUrl": "https://github.com/your-username/sample-project-three",
-    "imageUrl": "/images/projects/project-3.svg",
-    "featured": false
-  }
+ {
+  "id": "ai-speech-screening",
+  "title": "AI Speech-Based Depression & Anxiety Screening",
+  "description": "Served as Team Lead for an AI-based speech screening project designed to support early screening of depression and anxiety. Coordinated project activities while contributing to audio preprocessing, feature extraction, model training, testing, and result analysis. Processed 1000+ speech samples, extracted 40+ acoustic features including MFCC, chroma, spectral contrast, and zero-crossing rate, and worked with CNN, RNN, and LSTM models using Python and LibROSA. Developed a Streamlit-based interface for speech analysis and result visualization.",
+  "tech": [
+    "Python",
+    "LibROSA",
+    "CNN",
+    "RNN",
+    "LSTM",
+    "Streamlit"
+  ],
+  "imageUrl": "/images/projects/ai-speech-screening.png",
+  "featured": true
+}
 ]

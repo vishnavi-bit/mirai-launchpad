@@ -1,14 +1,20 @@
 [
   {
-    "id": "sample-certification-1",
-    "name": "Sample Certification — AI/ML Engineering",
-    "issuer": "Sample Issuing Body",
-    "date": "2024"
+    "id": "cert-servicenow-csa",
+    "name": "ServiceNow Certified System Administrator (CSA)",
+    "issuer": "ServiceNow",
+    "date": "August 2, 2025"
   },
   {
-    "id": "sample-certification-2",
-    "name": "Sample Certification — Cloud Architecture",
-    "issuer": "Sample Issuing Body",
-    "date": "2023"
+    "id": "cert-servicenow-cad",
+    "name": "ServiceNow Certified Application Developer (CAD)",
+    "issuer": "ServiceNow",
+    "date": "August 30, 2025"
+  },
+  {
+    "id": "cert-python-essentials",
+    "name": "Python Essentials",
+    "issuer": "Cisco Networking Academy",
+    "date": "March 28, 2025"
   }
 ]

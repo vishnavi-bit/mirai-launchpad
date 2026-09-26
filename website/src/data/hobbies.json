@@ -1,20 +1,14 @@
 [
   {
-    "id": "reading",
-    "title": "Reading",
-    "description": "Replace with a short, personal blurb about this hobby.",
-    "icon": "BookOpen"
+    "id": "travelling",
+    "title": "Travelling",
+    "description": "Exploring new places, cultures, and experiences.",
+    "icon": "Map"
   },
   {
-    "id": "hiking",
-    "title": "Hiking",
-    "description": "Replace with a short, personal blurb about this hobby.",
-    "icon": "Mountain"
-  },
-  {
-    "id": "chess",
-    "title": "Chess",
-    "description": "I won district level open chess championship - Kolar in 1995",
-    "icon": "Puzzle"
+    "id": "crafting",
+    "title": "Crafting",
+    "description": "Creating handmade crafts and exploring creativity.",
+    "icon": "Scissors"
   }
 ]

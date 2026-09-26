@@ -1,9 +1,10 @@
 [
   {
-    "id": "bangalore-university",
-    "institution": "Bangalore University",
-    "degree": "Bachelor's Degree",
-    "field": "Electronics",
-    "endDate": "1995"
+    "id": "ksrm-btech-cse",
+    "institution": "K.S.R.M College of Engineering",
+    "degree": "B.Tech",
+    "field": "Computer Science and Engineering",
+    "startDate": "2022",
+    "endDate": "2026"
   }
 ]

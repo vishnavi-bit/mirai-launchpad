@@ -1,10 +1,10 @@
 {
-  "name": "Roopesh Tayaloor",
+  "name": "SIDDAVATAM VISHNAVI",
   "title": "AI Engineer",
-  "tagline": "Building AI-powered products, and the people who ship them.",
-  "location": "Bangalore, India",
-  "email": "roopesht@gmail.com",
-  "phone": "+91 9901766617",
-  "avatarUrl": "/images/avatar-photo.png",
-  "bio": "I'm a software architect turned AI engineer, with two decades spent designing systems before spending the last few years applying that experience to machine learning, generative AI, and the products built on top of them.\n\nI believe learning is the most important skill anyone can build — which is why, alongside engineering, I run **OjasaMirai**, a learning platform that has already helped 150+ learners pick up in-demand skills faster, backed by a custom VS Code extension for hands-on, in-editor practice.\n\nI care about the intersection of technology, psychology, and hands-on craft: not just building models and systems, but building the tools and environments that help people actually learn and use them."
+  "tagline": "Building AI-powered solutions and intelligent applications.",
+  "location": "Kadapa, Andhra Pradesh, India",
+  "email": "vishnavi709@gmail.com",
+  "phone": "+91 9346434375",
+  "avatarUrl": "/images/pandu.jpeg",
+  "bio": "I'm a Computer Science and Engineering graduate with an interest in Full Stack Development and AI Engineering.\n\nI have hands-on experience with Python, FastAPI, React.js, MySQL, and REST APIs. During my Full Stack Development training at Ojasa Mirai, I worked on connecting frontend, backend, and database components to build practical web applications.\n\nI have also worked on AI-based projects, including an AI speech-based screening system and an AI Wellness Coach. I enjoy learning new technologies and building practical applications that solve real-world problems."
 }

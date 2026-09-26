@@ -1,47 +1,16 @@
 [
   {
-    "id": "ojasamirai",
-    "company": "OjasaMirai",
-    "role": "Founder & CEO",
-    "startDate": "2024",
-    "endDate": "Present",
+    "id": "ojasa-mirai",
+    "company": "Ojasa Mirai",
+    "role": "Full Stack Development Trainee",
+    "startDate": "2025",
+    "endDate": "2025",
     "highlights": [
-      "Built and shipped a learning portal that has reached 150+ learners",
-      "Designed and built a companion VS Code extension for hands-on, in-editor practice",
-      "Own product strategy, engineering, and go-to-market for the platform end to end"
-    ]
-  },
-  {
-    "id": "arthasangraha",
-    "company": "Arthasangraha",
-    "role": "Co-founder",
-    "startDate": "2020",
-    "endDate": "Present",
-    "highlights": [
-      "Built trading analytics tools that give aspiring traders data-driven market insights",
-      "Designed the data pipeline and product experience from the ground up"
-    ]
-  },
-  {
-    "id": "sapient",
-    "company": "Sapient",
-    "role": "Architect",
-    "startDate": "2006",
-    "endDate": "2019",
-    "highlights": [
-      "Led architectural design and implementation for large-scale enterprise solutions",
-      "Mentored engineering teams on system design and delivery practices over a 13-year tenure"
-    ]
-  },
-  {
-    "id": "pepperl-fuchs",
-    "company": "Pepperl+Fuchs",
-    "role": "Sr. Consultant",
-    "startDate": "2001",
-    "endDate": "2006",
-    "highlights": [
-      "Provided technical consulting for industrial automation clients",
-      "Delivered software integration work for automation systems over a 5-year tenure"
+      "Developed a full-stack application using Python, React.js, FastAPI, and MySQL",
+      "Implemented REST APIs using GET, POST, PUT, and DELETE methods",
+      "Worked with relational MySQL tables for users, yogasanas, and sessions",
+      "Built 7+ React components and integrated frontend forms with backend APIs",
+      "Used Git and GitHub for version control and practiced basic Docker commands"
     ]
   }
 ]

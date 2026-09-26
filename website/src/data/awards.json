@@ -1,9 +1,23 @@
 [
   {
-    "id": "sample-award-1",
-    "name": "Sample Award — Innovation Recognition",
-    "issuer": "Sample Organization",
-    "date": "2024",
-    "description": "Replace with a real award or achievement, or remove this entry."
+    "id": "cert-servicenow-csa",
+    "name": "ServiceNow Certified System Administrator (CSA)",
+    "issuer": "ServiceNow",
+    "date": "August 2, 2025",
+    "description": "Certified in ServiceNow platform administration, including core platform configuration and IT service management fundamentals."
+  },
+  {
+    "id": "cert-servicenow-cad",
+    "name": "ServiceNow Certified Application Developer (CAD)",
+    "issuer": "ServiceNow",
+    "date": "August 30, 2025",
+    "description": "Certified in ServiceNow application development and customization."
+  },
+  {
+    "id": "cert-python-essentials",
+    "name": "Python Essentials",
+    "issuer": "Cisco Networking Academy",
+    "date": "March 28, 2025",
+    "description": "Completed training in Python fundamentals and programming concepts."
   }
 ]
