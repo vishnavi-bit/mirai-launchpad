@@ -11,8 +11,8 @@ export function Hero() {
       <img
         src={withBase(personal.avatarUrl)}
         alt={personal.name}
-        width={128}
-        height={128}
+        width={150}
+        height={150}
         // Typically the LCP element (ST-077) — hint the browser to fetch it
         // immediately rather than at its default (often deprioritized)
         // priority, same intent as `loading="lazy"` for offscreen images

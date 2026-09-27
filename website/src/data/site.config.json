@@ -1,6 +1,6 @@
 {
   "siteTitle": "SIDDAVATAM VISHNAVI",
-  "tagline": "Full Stack Developer | AI Engineer",
+  "tagline": " AI Engineer",
   "basePath": "/mirai-launchpad/",
   "defaultTheme": "dark-tech",
   "availableThemes": [
@@ -11,8 +11,8 @@
   ],
   "favicon": "/favicon.svg",
   "seo": {
-    "description": "Portfolio of SIDDAVATAM VISHNAVI, Full Stack Developer and AI Engineer — projects, experience, skills, and certifications.",
-    "ogImage": "/images/og-image.svg"
+    "description": "Portfolio of SIDDAVATAM VISHNAVI, AI Engineer — projects, experience, skills, and certifications.",
+    "ogImage": "/images/og-image1.svg"
   },
   "navigation": [
     {
